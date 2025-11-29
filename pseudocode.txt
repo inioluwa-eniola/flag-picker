@@ -1,0 +1,27 @@
+/*
+REQUIREMENTS
+1. We want to limit the number of colours chosen to three
+2. We want to limit the number of continents chosen to three
+3. When the generate flags button is clicked,  the modal full of the flags whould popup 
+4. The flags would be displayed in a grid 
+
+METHOD
+1. Save all the chosen colours into an array 
+2. Save all the chosen continents into an array 
+3. Narrow down the countries objects to remain those that are in the chosen continents 
+4. Two ways of choosing the countries: 
+
+    - Method 1: Pick the first colour in the colour array and check if the countries in the continents have the colour. 
+        Narrow down the countries objects further to include the countries that have the colour of the flag. 
+        Do the same for the second colour, check the second colour and check if the countries objects has that colour also. 
+        If they do than narrow the countries objects further to the countries objects that include two out of the three chosen colours.
+        Check for the last chosen colour. Check if the countries objects include the last colour.
+        If they do, then print out the flags. 
+        If they don't then log "No Country Flag has the colour combination. TRY AGAIN!"  
+
+    
+    - Method 2: Make a list of the chosen colours, then look for the object in the countries objects that include all the selected colours - be it one, two or three colours 
+        that are selected.
+        Then narrow down the countries objects to only those countries whose flags include the three selected colours.
+
+*/
